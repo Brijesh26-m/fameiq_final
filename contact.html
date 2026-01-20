@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <title>Let’s Talk — FAMEIQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+<body data-page="contact">
+ 
+
+<div id="globe-bg"></div>
+
+
+<!--header-->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FAMEIQ — Home">
+        <img src="logo.png" alt="FAMEIQ" class="brand-logo" />
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li>
+            <a href="contact.html" class="btn btn-small btn-outline is-active">Let’s Talk</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <span class="brand-tagline">Growth with Algorithm</span>
+  </header>
+
+  <div class="background-layer" aria-hidden="true">
+    <canvas id="bgCanvas"></canvas>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+  </div>
+
+  <main class="page">
+    <section class="section contact-section" aria-labelledby="contact-title">
+      <div class="container contact-card cta-inner glass reveal-up">
+        <div class="cta-copy">
+          <p class="eyebrow">Let’s build what’s next</p>
+          <h2 id="contact-title">Let AI, strategy, and creative systems work together to scale your brand faster.</h2><br>
+          <p>
+            Share your growth goals, platform challenges, and where you want to scale next.
+FAMEIQ responds within one business day with a clear, data-driven growth plan.
+        </div>
+
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" required placeholder="Alex from Brightline" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <label for="type">Growth Objective</label>
+            <select id="type" name="type">
+              <option value="">Select an option</option>
+              <option value="performance-upgrade">Website Performance Upgrade</option>
+              <option value="new-growth-website">New Growth Website</option>
+              <option value="ai-audit">AI Conversion & Funnel Audit</option>
+              <option value="content-algorithm-system">Content & Algorithm Growth System</option>
+              <option value="social-growth">Social Media & Reels Growth System</option>
+              <option value="automation-setup">AI Marketing Automation Setup</option>
+              <option value="brand-strategy">Brand Positioning & Growth Strategy</option>
+              <option value="lead-landing">High-Converting Lead Landing Page</option>
+              <option value="seo-scaling">SEO & Organic Traffic Scaling</option>
+              <option value="full-retainer">Full-Stack Digital Growth Retainer</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your goals, timeline and what success looks like."></textarea>
+          </div>
+          <a href="mailto:fameiqmarekting@gmail.com" class="btn btn-primary btn-full">
+  Book Strategy Call
+</a>
+
+          <p class="form-note">Response time: within 24 hours. AI-first consultation.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-text">FAMEIQ</span>
+        <p>AI-Powered Marketing Agency for Scalable Brand Growth.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="process.html">Process</a>
+        <a href="why-us.html">Why us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="mailto:hello@fameiq.studio">Shlokk@fameiq.agency</a>
+        <span>© <span id="year"></span> FameIQ. All Rights Reserved</span>
+      </div>
+    </div>
+    <div class="background-layer" aria-hidden="true"></div>
+
+  </footer>
+<!--  Plus Menu -->
+<div id="plusMenuRoot">
+  <button id="plusToggle" aria-label="Open menu">+</button>
+
+  <div id="plusMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="process.html">Process</a>
+    <a href="why-us.html">Why Us</a>
+  </div>
+</div>
+
+
+</body>
+</html>

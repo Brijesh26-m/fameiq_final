@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <title>FAMEIQ — Creative Digital Studio</title>
+  <meta
+    name="description"
+    content="FAMEIQ helps brands scale with strategy, design, and high-performing web experiences for ambitious businesses."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+  <script src="main.js" defer></script>
+</head>
+<body data-page="home">
+
+
+<!-- 3D Birds Background -->
+<div id="birds-bg" aria-hidden="true"></div>
+
+
+  <!-- Scroll 3D illusion background 
+<div class="scroll-illusion-bg" aria-hidden="true"></div>
+<div class="scroll-illusion-bg primary"></div>
+<div class="scroll-illusion-bg secondary s1"></div>-->
+
+
+
+<!-- Cursor splash zones (NO layout impact) -->
+<div class="cursor-zone hero-zone" data-splash="#ffd900"></div>
+<div class="cursor-zone values-zone" data-splash="#5ddcff"></div>
+<div class="cursor-zone process-zone" data-splash="#ff6ad5"></div>
+<div class="cursor-zone footer-zone" data-splash="#6aff9f"></div>
+
+<div id="cursorBlob"></div>
+<div id="cursorFluid"></div>
+
+
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FAMEIQ — Home">
+        <img src="logo.png" alt="FAMEIQ" class="brand-logo" />
+
+      </a>
+
+      <!-- NAV REMOVED: keep minimal header with logo only -->
+      <nav class="nav" aria-label="Primary navigation"></nav>
+    </div>
+    <span class="brand-tagline">Growth with Algorithm</span>
+  </header>
+
+  <!-- ================= BACKGROUND LAYER ================= -->
+  <div class="background-layer" aria-hidden="true">
+    <canvas id="bgCanvas"></canvas>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+  </div>
+
+  <!-- ================= PAGE ================= -->
+  <main class="page" id="top">
+    <!-- ================ HERO ================ -->
+    <section class="section hero hero-section" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal-up">
+          <p class="eyebrow">AI-Powered Growth Partner</p>
+          <h1 class="hero-title" id="hero-title">
+            Helping brands 
+            <span class="highlight-inline">scale</span>
+            <span class="hero-title">with</span>
+            <span class="highlight-inline">design</span>,
+            <span class="highlight-inline">story</span> and
+            <span
+                  class="highlight-inline highlight-rollout"
+                    data-words="advanced web,AI strategy,brand systems,Scalable Growth,creative tech"
+>
+                            <span class="roll-text">advanced web</span></span>
+
+
+
+          </h1>
+          <p class="hero-subtitle">
+            Fame IQ is a digital AI marketing agency focused on organic brand growth by combining AI tools with real industry expertise.<br>
+            We help brands scale visibility, content, and conversions using AI-driven strategies with lower production costs.
+          </p>
+
+          <div class="hero-metrics">
+  <div class="metric">
+    <span class="metric-value" data-target="6">0</span><span class="metric-suffix">+</span>
+    <span class="metric-label">brands guided</span>
+  </div>
+  <div class="metric">
+    <span class="metric-value" data-target="100">0</span><span class="metric-suffix">K</span>
+    <span class="metric-label">Views Delivered</span>
+  </div>
+  <div class="metric">
+    <span class="metric-value" data-target="7">0</span><span class="metric-suffix">+</span>
+    <span class="metric-label">combined yrs experience</span>
+  </div>
+</div>
+
+
+          <div class="hero-actions">
+            <a href="https://cal.id/fame-iq/introduction" class="btn btn-primary">Schedule Intro!</a>
+          </div>
+        </div>
+
+        <!-- NEW: circular line animation on the right side of the hero -->
+        <!-- Right-side animated links column -->
+
+
+        
+    </section>
+
+    <!-- ================ VALUES ================ -->
+    <section class="section values-section" aria-labelledby="values-title">
+      <div class="container section-header reveal-up">
+        <p class="eyebrow">FAMEIQ Growth Principles</p>
+        <h2 id="values-title">Growth Principles That Power Scalable Results.</h2>
+        <p class="section-intro">
+          Our strategies are built on data, automation, and algorithm understanding — so your brand doesn’t just look good, it scales consistently.
+        </p>
+      </div>
+
+      <div class="container values-grid">
+        <article class="values-card glass reveal-up">
+          <h3>Algorithm-Ready Clarity</h3><br>
+          <p>
+            Content and structure are designed to communicate clearly to both users and algorithms, improving visibility and engagement.
+          </p>
+        </article>
+
+        <article class="values-card glass reveal-up" style="--delay:0.06s">
+          <h3>Conversion-Focused Systems</h3> <br>
+          <p>
+            Every layout, copy block, and interaction is optimized to guide users toward action using data-backed funnels.
+          </p>
+        </article>
+
+        <article class="values-card glass reveal-up" style="--delay:0.12s">
+          <h3>Scalable Growth Partnership</h3><br>
+          <p>
+            We work as a long-term growth partner, continuously optimizing content, reach, and performance using AI-driven insights.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-text">FAMEIQ</span>
+        <p>AI-Powered Marketing Agency for Scalable Brand Growth.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="process.html">Process</a>
+        <a href="why-us.html">Why us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="mailto:hello@fameiq.studio">Shlokk@fameiq.agency</a>
+        <span>© <span id="year"></span> FameIQ. All Rights Reserved</span>
+      </div>
+    </div>
+    <div class="background-layer" aria-hidden="true"></div>
+
+  </footer>
+<!-- Plus Menu -->
+<div id="plusMenuRoot">
+  <button id="plusToggle" aria-label="Open menu">+</button>
+
+  <div id="plusMenu">
+    <a href="about.html"> About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="process.html">Process</a>
+    <a href="why-us.html">Why Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+
+</body>
+</html>
