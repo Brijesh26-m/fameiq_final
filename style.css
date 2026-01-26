@@ -67,7 +67,6 @@ body {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
   color: var(--color-text);
-  background: radial-gradient(circle at 0 0, #2b3cff 0, #020642 55%, #010221 100%);
   min-height: 100svh;
   scroll-behavior: smooth;
 }
@@ -4193,3 +4192,4 @@ body[data-page="home"] #birds-bg {
     display: block;
   }
 }
+
