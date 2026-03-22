@@ -38,3 +38,7 @@ This project focuses on clean UI/UX, modern design, and smooth user experience.
 ├── main.js
 ├── logo.png
 └── .github/workflows/static.yml
+---
+
+## 🎯 Purpose
+This project was built to practice frontend development and create a real-world responsive web application.
