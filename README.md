@@ -28,3 +28,13 @@ This project focuses on clean UI/UX, modern design, and smooth user experience.
 ---
 
 ## 📂 Project Structure
+├── index.html
+├── about.html
+├── contact.html
+├── portfolio.html
+├── process.html
+├── why-us.html
+├── style.css
+├── main.js
+├── logo.png
+└── .github/workflows/static.yml
